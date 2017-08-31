@@ -33,6 +33,11 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
+            
+      -test:
+          name: test
+          command: |
+            ls
 
       - save_cache:
           paths:
