@@ -34,10 +34,7 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
             
-      -test:
-          name: test
-          command: |
-            ls
+
 
       - save_cache:
           paths:
